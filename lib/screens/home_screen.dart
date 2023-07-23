@@ -21,14 +21,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      navigationBar: const CupertinoNavigationBar(
-        backgroundColor: Colors.transparent,
-        middle: Image(
-          image: AssetImage(
-            Constants.thread,
-          ),
-        ),
-      ),
+      // navigationBar: const CupertinoNavigationBar(
+      //   backgroundColor: Colors.transparent,
+      //   middle: Image(
+      //     image: AssetImage(
+      //       Constants.thread,
+      //     ),
+      //   ),
+      // ),
       child: CupertinoTabScaffold(
         backgroundColor: Colors.black,
         tabBar: CupertinoTabBar(
