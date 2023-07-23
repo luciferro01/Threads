@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-Column userWidget(
+Column userActivityWidget(
     {required String userName,
-    required String userStatus,
+    required String lastOnlineStatus,
     required bool isVerified,
     required String userImage,
     bool isFollowed = false,
@@ -41,7 +41,7 @@ Column userWidget(
                       ),
                     ),
                     Text(
-                      userStatus,
+                      lastOnlineStatus,
                       style: const TextStyle(
                         color: Colors.grey,
                       ),

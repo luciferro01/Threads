@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:threads/utils/constants.dart';
 
-import '../widgets/user_widget.dart';
+import '../widgets/user_search_widget.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -42,7 +42,7 @@ class Search extends StatelessWidget {
                 shrinkWrap: true,
                 itemCount: 2,
                 itemBuilder: (context, indext) {
-                  return userWidget(
+                  return userSearchWidget(
                     isVerified: false,
                     userFollowers: '800M followers',
                     userImage: Constants.pp,
