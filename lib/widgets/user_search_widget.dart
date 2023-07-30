@@ -13,6 +13,7 @@ Column userSearchWidget(
         padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -59,16 +60,31 @@ Column userSearchWidget(
                 ),
               ],
             ),
-            OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: Colors.transparent,
+            Container(
+              height: 30,
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              margin: const EdgeInsets.all(0),
+              decoration: ShapeDecoration(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(6),
+                  side: BorderSide(
+                    width: 1,
+                    color: Colors.grey.shade800,
+                  ),
+                ),
               ),
-              onPressed: () {},
-              child: const Text(
-                'Follow',
-                style: TextStyle(
-                  fontWeight: FontWeight.w400,
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  padding: EdgeInsets.all(0),
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.transparent,
+                ),
+                onPressed: () {},
+                child: const Text(
+                  'Follow',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
               ),
             )
