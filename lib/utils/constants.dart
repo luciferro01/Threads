@@ -4,5 +4,5 @@ class Constants {
   static const String pp = 'assets/pp.jpg';
   static const String login = 'assets/login.jpg';
   static const String signup = 'assets/signup.jpg';
-  static const String thread = 'assets/thread.png';
+  static const String thread = 'assets/logo.png';
 }
