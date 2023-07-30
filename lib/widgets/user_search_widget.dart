@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threads/widgets/outlined_button_widget.dart';
 
 Column userSearchWidget(
     {required String userName,
@@ -60,34 +61,12 @@ Column userSearchWidget(
                 ),
               ],
             ),
-            Container(
-              height: 30,
-              padding: const EdgeInsets.symmetric(horizontal: 10),
-              margin: const EdgeInsets.all(0),
-              decoration: ShapeDecoration(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(6),
-                  side: BorderSide(
-                    width: 1,
-                    color: Colors.grey.shade800,
-                  ),
-                ),
-              ),
-              child: OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  padding: EdgeInsets.all(0),
-                  foregroundColor: Colors.white,
-                  backgroundColor: Colors.transparent,
-                ),
+            outlinedButtonWidget(
                 onPressed: () {},
-                child: const Text(
-                  'Follow',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-            )
+                buttonText: 'Follow',
+                height: 30,
+                width: 90,
+                borderRadius: 10)
           ],
         ),
       ),

@@ -13,13 +13,14 @@ class HomeScreen extends StatelessWidget {
   final List<Widget> _items = [
     const Feed(),
     const Search(),
-    const Thread(),
-    const Activity(),
+    Thread(),
+    Activity(),
     const Account(),
   ];
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      resizeToAvoidBottomInset: false,
       child: CupertinoTabScaffold(
         backgroundColor: Colors.black,
         tabBar: CupertinoTabBar(

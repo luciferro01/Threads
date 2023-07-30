@@ -224,7 +224,7 @@ Column feedWidget({
                       width: 20,
                     ),
                     Icon(
-                      CupertinoIcons.share,
+                      CupertinoIcons.paperplane,
                       size: 26,
                       color: Colors.white,
                     ),

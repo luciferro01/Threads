@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:threads/utils/constants.dart';
+import 'package:threads/widgets/outlined_button_widget.dart';
 
 class Account extends StatelessWidget {
   const Account({super.key});
@@ -125,78 +126,20 @@ class Account extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Expanded(
-                    child: Container(
+                    child: outlinedButtonWidget(
+                      onPressed: () {},
+                      buttonText: 'Edit Profile',
                       height: 36,
-                      padding: const EdgeInsets.all(0),
-                      decoration: ShapeDecoration(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6),
-                          side: BorderSide(
-                            width: 1,
-                            color: Colors.grey.shade700,
-                          ),
-                        ),
-                      ),
-                      child: OutlinedButton(
-                        style: OutlinedButton.styleFrom(
-                          shape: const RoundedRectangleBorder(
-                            side: BorderSide(
-                              width: 2,
-                              color: Colors.blue,
-                              style: BorderStyle.solid,
-                            ),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 6,
-                          ),
-                        ),
-                        onPressed: () {},
-                        child: const Text(
-                          'Edit Profile',
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
                     ),
                   ),
                   const SizedBox(
                     width: 12,
                   ),
                   Expanded(
-                    child: Container(
+                    child: outlinedButtonWidget(
+                      onPressed: () {},
+                      buttonText: 'Share Profile',
                       height: 36,
-                      padding: const EdgeInsets.all(0),
-                      decoration: ShapeDecoration(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6),
-                          side: BorderSide(
-                            width: 1,
-                            color: Colors.grey.shade700,
-                          ),
-                        ),
-                      ),
-                      child: OutlinedButton(
-                        style: OutlinedButton.styleFrom(
-                          shape: const RoundedRectangleBorder(
-                            side: BorderSide(
-                              width: 2,
-                              color: Colors.blue,
-                              style: BorderStyle.solid,
-                            ),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 6,
-                          ),
-                        ),
-                        onPressed: () {},
-                        child: const Text(
-                          'Share Profile',
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
                     ),
                   ),
                 ],

@@ -52,14 +52,14 @@ class _SplashScreenState extends State<SplashScreen> {
               const SizedBox(
                 height: 12,
               ),
-              const Text(
-                'MOHIL BANSAL',
-                style: TextStyle(
-                  fontWeight: FontWeight.w800,
-                  color: Colors.blueAccent,
-                  fontSize: 28,
-                ),
-              ),
+              // const Text(
+              //   'MOHIL BANSAL',
+              //   style: TextStyle(
+              //     fontWeight: FontWeight.w800,
+              //     color: Colors.blueAccent,
+              //     fontSize: 28,
+              //   ),
+              // ),
               const SizedBox(
                 height: 12,
               ),

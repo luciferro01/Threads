@@ -1,9 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:threads/widgets/outlined_button_widget.dart';
 
 class Activity extends StatelessWidget {
-  const Activity({super.key});
-
+  Activity({super.key});
+  final List<Map<String, dynamic>> activityBars = [
+    {'name': 'All', 'onPressed': () {}},
+    {'name': 'Follows', 'onPressed': () {}},
+    {'name': 'Replies', 'onPressed': () {}},
+    {'name': 'Mentions', 'onPressed': () {}},
+    {'name': 'Quotes', 'onPressed': () {}},
+    {'name': 'Reposts', 'onPressed': () {}},
+    {'name': 'Verified', 'onPressed': () {}},
+  ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,29 +36,24 @@ class Activity extends StatelessWidget {
               const SizedBox(
                 height: 14,
               ),
-              Flexible(
-                child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    shrinkWrap: true,
-                    itemCount: 2,
-                    itemBuilder: (context, index) {
-                      return OutlinedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                              side: const BorderSide(
-                                style: BorderStyle.solid,
-                                width: 2,
-                                color: Colors.red,
-                              ),
-                              borderRadius: BorderRadius.circular(12)),
-                        ),
-                        onPressed: () {},
-                        child: const Text(
-                          'All',
-                          style: TextStyle(fontSize: 12),
-                        ),
-                      );
-                    }),
+              SizedBox(
+                height: 30,
+                child: ListView.separated(
+                  separatorBuilder: (context, index) {
+                    return const SizedBox(
+                      width: 10,
+                    );
+                  },
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return outlinedButtonWidget(
+                      onPressed: activityBars[index]['onPressed'],
+                      buttonText: activityBars[index]['name'],
+                      width: 90,
+                    );
+                  },
+                  itemCount: activityBars.length,
+                ),
               )
             ],
           ),

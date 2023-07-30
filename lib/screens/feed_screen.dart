@@ -12,7 +12,7 @@ class Feed extends StatelessWidget {
     double width = MediaQuery.sizeOf(context).width;
     return SafeArea(
       child: CupertinoPageScaffold(
-        backgroundColor: Colors.black,
+        // backgroundColor: Colors.black,
         navigationBar: const CupertinoNavigationBar(
           backgroundColor: Colors.transparent,
           middle: Image(
@@ -23,7 +23,7 @@ class Feed extends StatelessWidget {
         ),
         resizeToAvoidBottomInset: true,
         child: Padding(
-          padding: const EdgeInsets.only(top: 48),
+          padding: const EdgeInsets.only(top: 0),
           child: ListView.builder(
             itemBuilder: (BuildContext context, index) {
               return feedWidget(
