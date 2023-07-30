@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Image(
                 fit: BoxFit.contain,
                 height: MediaQuery.sizeOf(context).width * 0.6,
-                image: const AssetImage(Constants.insta),
+                image: const AssetImage(Constants.thread),
               ),
               const Expanded(child: SizedBox()),
               const Text(

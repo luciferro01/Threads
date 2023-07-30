@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'screens/splash_screen.dart';
 
+final currentIndexProvider = StateProvider<int>((ref) => 0);
 void main() {
   // Client client = Client();
   // client
@@ -16,8 +17,6 @@ void main() {
     ),
   );
 }
-
-final currentIndexProvider = StateProvider<int>((ref) => 0);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
